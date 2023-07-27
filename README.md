@@ -52,6 +52,19 @@ $ git branch
 * dev
   main
 
-User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (dev) 
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (dev)
+
+
+
+   9  git branch -m master main
+   10  touch index.html
+   11  git add .
+   12  git commit -m 'Exercise 1 of Bundle 1'
+   13  git push
+   14  git checkout -b dev
+   15  git checkout -b test
+   16  git checkout dev
+   17  git branch -d test
+   18  git bra
 
 ```
