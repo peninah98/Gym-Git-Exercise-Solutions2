@@ -601,3 +601,231 @@ To https://github.com/peninah98/Gym-Git-Exercises.git
 
 User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/service-redesign)
 ```
+
+
+## Bundle 3
+### Exercise 1
+
+```
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/service-redesign)
+$ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/team-page)
+$ touch team.html
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/team-page)
+$ git add .
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/team-page)
+$ git commit -m "Bundle 3 Exercise 1"
+[ft/team-page 76454fa] Bundle 3 Exercise 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 team.html
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/team-page)
+$ git push
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (main)
+$ git branch  ft/contact-page
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (main)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/service-redesign
+  ft/team-page
+* main
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (main)
+$ git checkout ft/team-page 
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/team-page)
+$ git log
+commit 76454faf3678daad3e6ec4e5a137aa46ffea1081 (HEAD -> ft/team-page, origin/ft/team-page)
+Author: peninah98 <peninangizwena@gmail.com>
+Date:   Fri Jul 28 10:27:22 2023 +0200
+
+    Bundle 3 Exercise 1
+
+commit b5845f0e8c1e77a904bdfe6a1f1f85ffe195a0c4 (origin/ft/service-redesign, ft/service-redesign)
+Author: peninah98 <peninangizwena@gmail.com>
+Date:   Thu Jul 27 21:19:53 2023 +0200
+
+    Merged changes
+
+commit 10e37c4d057a39dad96c644277b174f5ec0f55ea
+Author: peninah98 <peninangizwena@gmail.com>
+Date:   Thu Jul 27 20:48:33 2023 +0200
+
+    Service page
+
+commit 5c8477b4fef4d819d84f54e6fa34998415b9eb35 (origin/main, origin/HEAD, main, ft/contact-page)
+Author: peninah98 <peninangizwena@gmail.com>
+Date:   Thu Jul 27 11:18:21 2023 +0200
+
+    Exercise 1 of Bundle 1
+
+commit 39015e15173ae0d780914eca9f63336eb5293fb3
+Author: peninah98 <78850411+peninah98@users.noreply.github.com>
+Date:   Thu Jul 27 11:10:32 2023 +0200
+
+    Initial commit
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/team-page)
+$
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/team-page)
+$ git checkout ft/contact-page 
+Switched to branch 'ft/contact-page'
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/contact-page)
+$ git cherry-pick 76454faf3678daad3e6ec4e5a137aa46ffea1081
+[ft/contact-page cc74263] Bundle 3 Exercise 1
+ Date: Fri Jul 28 10:27:22 2023 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 team.html
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/contact-page)
+$ git add .
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/contact-page)
+$ git commit -m "Exercise 1 Bundle 3"
+[ft/contact-page e8ff9f6] Exercise 1 Bundle 3
+ 1 file changed, 11 insertions(+)
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/contact-page)
+$ git push --set-upstream origin ft/contact-page
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 659 bytes | 659.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting: 
+remote:      https://github.com/peninah98/Gym-Git-Exercises/pull/new/ft/contact-page
+remote:
+To https://github.com/peninah98/Gym-Git-Exercises.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/faq-page)
+$ touch faq.html
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/faq-page)
+$ git add .
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/faq-page)
+$ git commit -m 'Faq page '
+[ft/faq-page 9729382] Faq page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/faq-page)
+$   git push --set-upstream origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 524 bytes | 524.00 KiB/s, done.
+-page
+remote:
+To https://github.com/peninah98/Gym-Git-Exercises.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/faq-page)
+$ git revert 76454faf3678daad3e6ec4e5a137aa46ffea1081
+CONFLICT (modify/delete): team.html deleted in parent of 76454fa (Bundle 3 Exercise 1) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert 76454fa... Bundle 3 Exercise 1
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/faq-page|REVERTING)
+Revert "Bundle 3 Exercise 1"
+$ git revert 76454faf3678daad3e6ec4e5a137aa46ffea1081
+CONFLICT (modify/delete): team.html deleted in parent of 76454fa (Bundle 3 Exercise 1) and modified in HEAD.  Version HEAD of team.html left in tree.
+error: could not revert 76454fa... Bundle 3 Exercise 1
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/faq-page|REVERTING)
+$ git add .
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/faq-page|REVERTING)
+$ git revert 76454faf3678daad3e6ec4e5a137aa46ffea1081
+error: your local changes would be overwritten by revert.
+hint: commit your changes or stash them to proceed.
+fatal: revert failed
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/faq-page|REVERTING)
+$ git revert --continue
+[ft/faq-page a7e341e] Revert "Bundle 3 Exercise 1"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/faq-page)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 352 bytes | 352.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.      
+To https://github.com/peninah98/Gym-Git-Exercises.git
+   9729382..a7e341e  ft/faq-page -> ft/faq-page
+
+```
