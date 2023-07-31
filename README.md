@@ -993,3 +993,131 @@ branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/home-page-redesign)
 
 ```
+
+## Bundle 4
+### Exercise 2
+
+```
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (main)
+$ git checkout ft/footer
+error: pathspec 'ft/footer' did not match any file(s) known to git
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/footer)
+$ touch footer.js
+
+$ git status
+On branch ft/footer
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        footer.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/footer)
+$ git add footer.js 
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/footer)
+$ git commit -m"Footer"
+[ft/footer 0543557] Footer
+ 1 file changed, 1 insertion(+)
+ create mode 100644 footer.js
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/footer)
+$ git add footer.js 
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/footer)
+$ git commit -m'Footer updates"
+> ^C
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/footer)
+$ git commit -m'Footer updates'
+[ft/footer dd8ac80] Footer updates
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/footer)
+$     git push --set-upstream origin ft/footer
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 758 bytes | 758.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/peninah98/Gym-Git-Exercises/pull/new/ft/footer
+remote:
+To https://github.com/peninah98/Gym-Git-Exercises.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (main)
+$ git checkout -b ^C
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/squashing)
+$ git merge --squash ft/footer
+Updating db051fb..dd8ac80
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.js | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 footer.js
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/squashing)
+$ git commit -m "footer changes squashing"
+[ft/squashing b474939] footer changes squashing
+ 1 file changed, 7 insertions(+)
+ create mode 100644 footer.js
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/squashing)
+$ git push
+fatal: The current branch ft/squashing has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/squashing
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/squashing)
+$     git push --set-upstream origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 457 bytes | 457.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/peninah98/Gym-Git-Exercises/pull/new/ft/squashing       
+remote:
+To https://github.com/peninah98/Gym-Git-Exercises.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/squashing)```
