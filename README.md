@@ -1186,9 +1186,7 @@ remote:
 ## Bundle 6
 ### Exercise 1
 
-```
-
-To https://github.com/peninah98/git-cafe-exercise.git
+```To https://github.com/peninah98/git-cafe-exercise.git
  * [new branch]      ft -> ft
 branch 'ft' set up to track 'origin/ft'.
 
@@ -1212,8 +1210,6 @@ Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (2/2), completed with 2 local objects
 To https://github.com/peninah98/git-cafe-exercise.git
    2db4043..c07cd31  ft -> ft
-$
-
 ```
 
 
@@ -1258,5 +1254,30 @@ remote:
 To https://github.com/peninah98/git-cafe-exercise.git
  * [new branch]      fixBugs -> fixBugs
 branch 'fixBugs' set up to track 'origin/fixBugs'.
+```
 
+### Exercise 3 Exercise 4
+
+```
+$ git add .
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (fixBugs)
+$ git commit -m "Index 4 updaze change phone number"
+[fixBugs 481a298] Index 4 updaze change phone number
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (fixBugs)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/peninah98/git-cafe-exercise.git
+   d3094f8..481a298  fixBugs -> fixBugs
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (fixBugs)
+$
 ```
