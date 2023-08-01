@@ -1215,3 +1215,48 @@ To https://github.com/peninah98/git-cafe-exercise.git
 $
 
 ```
+
+
+### Exercise 2
+
+```
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (ft)
+
+$ git checkout -b fixBugs
+Switched to a new branch 'fixBugs'
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (fixBugs)
+$ git add .
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (fixBugs)
+$ git commit -m "Index4.html updates"
+[fixBugs d3094f8] Index4.html updates
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (fixBugs)
+$ git push
+fatal: The current branch fixBugs has no upstream branch.
+To push the current branch and set the remote as upstream, use       
+
+    git push --set-upstream origin fixBugs
+
+To have this happen automatically for branches without a tracking    
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (fixBugs)
+$  git push --set-upstream origin fixBugs
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects
+remote:
+remote: Create a pull request for 'fixBugs' on GitHub by visiting:
+remote:      https://github.com/peninah98/git-cafe-exercise/pull/new/fixBugs
+remote:
+To https://github.com/peninah98/git-cafe-exercise.git
+ * [new branch]      fixBugs -> fixBugs
+branch 'fixBugs' set up to track 'origin/fixBugs'.
+
+```
