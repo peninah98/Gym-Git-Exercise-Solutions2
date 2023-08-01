@@ -1121,3 +1121,97 @@ To https://github.com/peninah98/Gym-Git-Exercises.git
 branch 'ft/squashing' set up to track 'origin/ft/squashing'.
 
 User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/Gym-Git-Exercises (ft/squashing)```
+
+## Bundle 5
+### Exercise 1 Exercise 2
+
+```
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (main)
+$ git commit -m "Index page updates"
+[main d4ff412] Index page updates
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 322 bytes | 322.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/peninah98/git-cafe-exercise.git
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (main)
+$ git checkout -b ft/
+fatal: 'ft/' is not a valid branch name
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (main)
+$ git checkout -b ft
+Switched to a new branch 'ft'
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (ft)$ touch menu.html
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (ft)$ git add menu.html
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (ft)$ git commit -m "Menu page"
+[ft 2db4043] Menu page
+ 1 file changed, 19 insertions(+)
+ create mode 100644 menu.html
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (ft)$ git push
+fatal: The current branch ft has no upstream branch.
+To push the current branch and set the remote as upstream, use       
+
+    git push --set-upstream origin ft
+
+To have this happen automatically for branches without a tracking    
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (ft)$     git push --set-upstream origin ft
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 484 bytes | 484.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object. 
+remote: 
+remote: Create a pull request for 'ft' on GitHub by visiting:        
+remote:      https://github.com/peninah98/git-cafe-exercise/pull/new/ft
+remote:
+```
+
+## Bundle 6
+### Exercise 1
+
+```
+
+To https://github.com/peninah98/git-cafe-exercise.git
+ * [new branch]      ft -> ft
+branch 'ft' set up to track 'origin/ft'.
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (ft)$ git pull
+Already up to date.
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (ft)$ git add .
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (ft)
+$ git commit -m"Updates"
+[ft c07cd31] Updates
+ 1 file changed, 1 insertion(+)
+
+User@DESKTOP-TTE4MSC MINGW64 ~/Desktop/The Gym/git-cafe-exercise (ft)$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects
+To https://github.com/peninah98/git-cafe-exercise.git
+   2db4043..c07cd31  ft -> ft
+$
+
+```
